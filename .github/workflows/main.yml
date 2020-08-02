@@ -1,3 +1,15 @@
-- name: Hugo Actions
-  uses: srt32/hugo-action@v0.0.3
+name: bpicd
+on:
+  push:
+    branches: [ master ]
 
+
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Hugo Actions
+      uses: srt32/hugo-action@v0.0.3
